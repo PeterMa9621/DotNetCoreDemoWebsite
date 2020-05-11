@@ -1,0 +1,34 @@
+﻿
+@{
+    ViewData["Title"] = "Login";
+}
+<link rel="stylesheet" href="~/css/user/login.css" />
+<div>
+    <div class="wrapper fadeInDown">
+        <div id="formContent">
+            <!-- Tabs Titles -->
+            <!-- Icon -->
+            <div class="fadeIn first">
+                <img src="~/pic/logo.png" id="icon" alt="User Icon" />
+            </div>
+
+            <!-- Login Form -->
+            <div>
+                <form asp-action="Login" method="post">
+                    <input type="text" id="username" name="username" class="fadeIn second" placeholder="Username">
+                    <input type="password" id="password" name="password" class="fadeIn third" placeholder="Password">
+                    <span style="color: darkred"></span>
+                    <input type="submit" class="fadeIn fourth" value="Log In">
+                </form>
+            </div>
+
+            <!-- Remind Passowrd -->
+            <div id="formFooter">
+                <div class="form-inline justify-content-between">
+                    <a class="underlineHover" href="#">Forgot Password?</a>
+                    <a class="underlineHover" asp-controller="Register" asp-action="Index">Create Account</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
