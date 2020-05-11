@@ -1,0 +1,15 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\Demo",
+    "\\Demo\\bin\\Release",
+    "\\Demo\\Controllers",
+    "\\Demo\\Controllers\\User",
+    "\\Demo\\Services",
+    "\\Demo\\Views",
+    "\\Demo\\Views\\Login",
+    "\\Demo\\wwwroot",
+    "\\Demo\\wwwroot\\js"
+  ],
+  "PreviewInSolutionExplorer": false
+}

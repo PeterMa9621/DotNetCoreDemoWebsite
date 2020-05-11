@@ -9,11 +9,18 @@ namespace Demo.Models.Repository
 {
     public abstract class GenericRepository<C, T> : IGenericRepository<T> where T : class where C : DbContext, new()
     {
-        private C _context = new C();
+        private C _context;
         public C Context
         {
-            get { return _context; }
+            get {
+                return _context; 
+            }
             set { _context = value; }
+        }
+        public GenericRepository()
+        {
+            _context = new C();
+            _context.Database.EnsureCreated();
         }
         public void Add(T entity)
         {

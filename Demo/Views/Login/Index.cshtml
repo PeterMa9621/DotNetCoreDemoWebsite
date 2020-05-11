@@ -1,4 +1,4 @@
-﻿
+﻿@model LoginViewModel
 @{
     ViewData["Title"] = "Login";
 }
@@ -14,11 +14,23 @@
 
             <!-- Login Form -->
             <div>
-                <form asp-action="Login" method="post">
-                    <input type="text" id="username" name="username" class="fadeIn second" placeholder="Username">
-                    <input type="password" id="password" name="password" class="fadeIn third" placeholder="Password">
-                    <span style="color: darkred"></span>
-                    <input type="submit" class="fadeIn fourth" value="Log In">
+                <form method="post" asp-action="Index" asp-route-returnurl="@Model.ReturnUrl">
+                    <div asp-validation-summary="ModelOnly"></div>
+                    <div>
+                        <input type="text" asp-for="UserName" id="username" name="username" class="fadeIn second" placeholder="Username">
+                        <span asp-validation-for="UserName" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <input type="password" asp-for="Password" id="current-password" name="current-password" class="fadeIn third" placeholder="Password">
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div>
+                        <label asp-for="RememberMe"></label>
+                        <input asp-for="RememberMe" />
+                        <span asp-validation-for="RememberMe"></span>
+                    </div>
+
+                    <input id="login" type="submit" class="fadeIn fourth" value="Log In">
                 </form>
             </div>
 
@@ -32,3 +44,24 @@
         </div>
     </div>
 </div>
+
+<script>
+    $(document).ready(function () {
+        $("#ignored").submit(function (e) {
+            e.preventDefault();
+
+            var form = $(this);
+            var url = "@Url.Action("Login")";
+
+            $.ajax({
+                type: "POST",
+                url: url,
+                data: form.serialize(), // serializes the form's elements.
+                success: function (data) {
+                    $("#msg").text(data); // show response from the php script.
+                }
+            });
+        })
+    });
+
+</script>

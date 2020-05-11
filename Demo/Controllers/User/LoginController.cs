@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Demo.Models;
 using Demo.Models.User;
 using Demo.Services;
 using Microsoft.AspNetCore.Http;
@@ -18,23 +19,23 @@ namespace Demo.Controllers.User
         }
         public IActionResult Index()
         {
-            return View();
+            var model = new LoginViewModel();
+            return View(model);
         }
 
         [HttpPost]
-        public IActionResult Login(IFormCollection data)
+        public IActionResult Index(LoginViewModel model)
         {
-            string username = data["username"];
-            string password = data["password"];
+            string username = model.UserName;
+            string password = model.Password;
             UserEntity user = userService.GetMatchedUser(username, password);
             if (user != null)
             {
                 ViewData["UserName"] = username;
                 return View("Succeed");
-            } else
-            {
-                return View("Failed");
             }
+            ModelState.AddModelError("", "No such username or password does not match to username");
+            return View(model);
         }
     }
 }
