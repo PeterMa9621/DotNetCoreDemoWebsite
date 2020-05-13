@@ -2,41 +2,44 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using Demo.Models.User;
+using Demo.Models.DataModel.User;
+using Demo.Models.ViewModel;
 using Demo.Services;
 using Demo.Util;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Demo.Controllers.User
 {
     public class RegisterController : Controller
     {
+        private readonly UserManager<UserEntity> _userManager;
         private readonly UserService userService;
-        public RegisterController()
+        public RegisterController(UserManager<UserEntity> userManager, SignInManager<UserEntity> signInManager)
         {
-            userService = new UserService();
+            _userManager = userManager;
+            userService = new UserService(_userManager, signInManager);
         }
         public IActionResult Index()
         {
-            return View();
+            RegisterViewModel model = new RegisterViewModel();
+            return View(model);
         }
 
         [HttpPost]
-        public IActionResult Register([Bind("UserName,Password,Ip,LastLogin,RegDate,RegIp,Email,Session")] UserEntity userEntity)
+        public async Task<IActionResult> Index(RegisterViewModel model)
         {
             if(ModelState.IsValid)
             {
                 string ipAddress = Request.HttpContext.Connection.RemoteIpAddress.MapToIPv4().ToString();
-                bool succeed = userService.Add(userEntity, ipAddress);
+                model.RegIp = ipAddress;
+                bool succeed = await userService.Add(model);
                 if (succeed)
-                    return RedirectToAction("Index", "Home");
-                else
-                    return RedirectToAction("Error", "Home");
-            } else
-            {
-                return RedirectToAction("Error", "Home");
+                    return RedirectToAction("Index", "Login");
+                ModelState.AddModelError("", "The username has already been taken");
             }
             
+            return View(model);
         }
     }
 }

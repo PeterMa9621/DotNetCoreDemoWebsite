@@ -9,7 +9,6 @@ F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.pdb
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.Views.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Demo.Views.pdb
-F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csprojAssemblyReference.cache
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorAssemblyInfo.cache
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.RazorAssemblyInfo.cs
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.AssemblyInfoInputs.cache
@@ -137,7 +136,6 @@ F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\ru\Microsoft.CodeAnalysis.Works
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
-F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.Design.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Data.SqlClient.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Data.Sqlite.dll
@@ -171,13 +169,6 @@ F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\e_sqlit
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\e_sqlite3.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
-F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
-F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.MvcApplicationPartsAssemblyInfo.cache
-F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserEntities\Create.cshtml.g.cs
-F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserEntities\Delete.cshtml.g.cs
-F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserEntities\Details.cshtml.g.cs
-F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserEntities\Edit.cshtml.g.cs
-F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserEntities\Index.cshtml.g.cs
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Login\Index.cshtml.g.cs
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Register\Index.cshtml.g.cs
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Login\Failed.cshtml.g.cs
@@ -366,3 +357,20 @@ G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\staticwebassets\Dem
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.genruntimeconfig.cache
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.MvcApplicationPartsAssemblyInfo.cache
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.MvcApplicationPartsAssemblyInfo.cache
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\User\EditProfile.cshtml.g.cs
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\User\Profile.cshtml.g.cs
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csprojAssemblyReference.cache
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Index.cshtml.g.cs
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Detail.cshtml.g.cs
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Delete.cshtml.g.cs
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Edit.cshtml.g.cs
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Create.cshtml.g.cs
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Download.cshtml.g.cs

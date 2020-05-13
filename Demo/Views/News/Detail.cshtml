@@ -1,0 +1,61 @@
+﻿@model Demo.Models.DataModel.News.NewsEntity
+@{
+    ViewData["Title"] = "Detail";
+}
+<link rel="stylesheet" href="~/css/news/detail.css" />
+<div>
+    <div class="row justify-content-center" style="color: darkred">
+        <!-- Error msg -->
+    </div>
+    <div class="background-top">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <div class="title text-left">
+                    <div class="row justify-content-between">
+                        <h1>@Model.Title</h1>
+                        @if (User.Identity.Name == Model.Author)
+                        {
+                            <div class="dropdown float-right">
+                                <button type="button" class="btn btn-light dropdown-toggle" data-toggle="dropdown">
+                                    Operation
+                                </button>
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item dropdown-hover" asp-action="Edit" asp-route-id="@Model.Id">
+                                        Edit
+                                    </a>
+                                    <div class="dropdown-divider"></div>
+                                    <form method="post" asp-action="Delete">
+                                        <input type="hidden" name="id" value="@Model.Id" />
+                                        <input type="submit" class="dropdown-item dropdown-hover" asp-action="Delete" value="Delete">
+                                    </form>
+                                </div>
+                            </div>
+                        }
+                    </div>
+                    <div class="row">
+                        <span class="badge badge-primary category">@Model.Category</span>
+                    </div>
+                    <div class="row">
+                        <h4 class="mt-3">Author: @Model.Author</h4>
+                    </div>
+                    <div class="row">
+                        <p class="mt-3">Posted at: @Demo.Util.TimeUtil.ConvertTimeStampToDateTime(Model.CreatedAt).ToString()</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+    <div class="content text-left">
+        <div class="row">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-10">
+                <p>
+                    @Model.Content
+                </p>
+            </div>
+            <div class="col-sm-1"></div>
+        </div>
+    </div>
+</div>

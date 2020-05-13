@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark" style="z-index: 100">
             <a class="navbar-brand" asp-controller="Home" asp-action="Index">
-                <img src="../../assets/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                <img src="~/pic/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 Hunting World
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,38 +24,48 @@
                         <a class="nav-link" asp-controller="Home" asp-action="Index">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" :to="{name:'news'}">News</a>
+                        <a class="nav-link" asp-controller="News" asp-action="Index">News</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" :to="{name:'download'}">Download</a>
+                        <a class="nav-link" asp-controller="Home" asp-action="Download">Download</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" :to="{name:'about'}">About</a>
+                        <a class="nav-link" asp-action="About" asp-controller="Home">About</a>
                     </li>
                 </ul>
                 <ul class="navbar-nav form-inline my-2 my-lg-0">
-                    <li v-if="!user.username" class="nav-item">
-                        <a class="nav-link" asp-controller="Login" asp-action="Index">Login</a>
-                    </li>
-                    <li v-if="!user.username" class="nav-item">
-                        <a class="nav-link" asp-controller="Register" asp-action="Index">Register</a>
-                    </li>
-                    <li v-if="user.username && user.is_admin===1" class="nav-item">
-                        <a class="nav-link" :to="{name:'admin'}">Admin Board</a>
-                    </li>
-                    <li v-if="user.username && user.is_admin===1" class="nav-item">
-                        <a class="nav-link" :to="{name:'add-news'}">Post News</a>
-                    </li>
-                    <li v-if="user.username" id="profile" class="nav-item dropleft">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-
-                        </a>
-                        <div class="dropdown-menu justify-content-center" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item dropdown-hover" :to="{name:'profile'}">Profile</a>
-                            <div class="dropdown-divider"></div>
-                            <button class="dropdown-item dropdown-hover" >Logout</button>
-                        </div>
-                    </li>
+                    @if (!User.Identity.IsAuthenticated)
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Login" asp-action="Index">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" asp-controller="Register" asp-action="Index">Register</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <!--
+                        <li class="nav-item">
+                            <a class="nav-link" :to="{name:'admin'}">Admin Board</a>
+                        </li>
+                        -->
+                        <li class="nav-item">
+                            <a class="nav-link" asp-action="Create" asp-controller="News">Post News</a>
+                        </li>
+                        <li id="profile" class="nav-item dropleft">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                @User.Identity.Name
+                            </a>
+                            <div class="dropdown-menu justify-content-center" aria-labelledby="navbarDropdown">
+                                <a class="dropdown-item dropdown-hover" asp-action="Index" asp-controller="User" asp-route-id="@User.Identity.Name">Profile</a>
+                                <div class="dropdown-divider"></div>
+                                <form method="post" asp-action="Logout" asp-controller="Login">
+                                    <button type="submit" class="dropdown-item dropdown-hover">Logout</button>
+                                </form>
+                            </div>
+                        </li>
+                    }
                 </ul>
             </div>
         </nav>
@@ -67,11 +77,11 @@
     </div>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - Demo - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        <div class="container text-center">
+            &copy; 2020 - Demo Website By <a asp-controller="Home" asp-action="About">Jingyuan Ma</a> - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
         </div>
     </footer>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/lib/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
     @RenderSection("Scripts", required: false)
 </body>

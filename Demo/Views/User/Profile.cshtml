@@ -1,0 +1,94 @@
+﻿
+@model Demo.Models.DataModel.User.UserEntity
+@{
+    ViewData["Title"] = "Index";
+}
+<link rel="stylesheet" href="~/css/user/profile.css" />
+<div>
+    <div class="background-top">
+    </div>
+    <div class="background-middle">
+        <div class="container">
+            <div class="card card-body profile-card">
+                <div class="row">
+                    <div class="col-md-4 my-auto">
+                        <div class="text-center">
+                            <img src="~/pic/logo.png" height="100px" width="100px">
+                        </div>                       
+                        <p class="text-center">@Model.UserName</p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form-group">
+                            <div class="row justify-content-end">
+                                <a class="btn btn-outline-dark mr-3" asp-action="Edit" asp-route-id="@Model.UserName">Edit Profile</a>
+                            </div>
+                        </div>
+
+                        <ul class="nav nav-tabs" id="myTab" role="tablist">
+                            <li class="nav-item active">
+                                <a class="nav-link active" id="info-tab" data-toggle="tab" href="#info" role="tab" aria-controls="info" aria-selected="true">Profile</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="game-tab" data-toggle="tab" href="#game" role="tab" aria-controls="game" aria-selected="false">Game</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="info-tab">
+                                <div class="card card-body" style="border: none">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5>Email</h5>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="text-left">@Model.Email</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <h5>Join At</h5>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="text-left">@Demo.Util.TimeUtil.ConvertTimeStampToDateTime(Model.RegDate).ToString()</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <h5>PhoneNumber</h5>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="text-left">@Model.PhoneNumber</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="game" role="tabpanel" aria-labelledby="game-tab">
+                                <div class="card card-body" style="border: none">
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5>Game Server</h5>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="text-left">None</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mt-3">
+                                        <div class="col-6">
+                                            <h5>Gold Balance</h5>
+                                        </div>
+                                        <div class="col-6">
+                                            <p class="text-left">0</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="background-bottom">
+
+    </div>
+</div>
+

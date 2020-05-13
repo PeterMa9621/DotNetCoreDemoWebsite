@@ -12,5 +12,6 @@
     <WebStackScaffolding_DbContextTypeFullName>Demo.Models.User.UserContext</WebStackScaffolding_DbContextTypeFullName>
     <WebStackScaffolding_IsAsyncSelected>False</WebStackScaffolding_IsAsyncSelected>
     <WebStackScaffolding_IsViewGenerationSelected>True</WebStackScaffolding_IsViewGenerationSelected>
+    <NameOfLastUsedPublishProfile>Demo20200512171936 - Web Deploy</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

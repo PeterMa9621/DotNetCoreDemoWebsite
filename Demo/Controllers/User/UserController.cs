@@ -5,9 +5,11 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using Demo.Models.User;
-using Demo.Models.Repository;
 using Demo.Services;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Demo.Models.DataModel.User;
+using Demo.Models.ViewModel;
 
 namespace Demo.Controllers
 {
@@ -15,15 +17,42 @@ namespace Demo.Controllers
     {
         private readonly UserService userService;
 
-        public UserController()
+        public UserController(UserManager<UserEntity> userManager, SignInManager<UserEntity> signInManager)
         {
-            userService = new UserService();
+            userService = new UserService(userManager, signInManager);
         }
 
         // GET: UserEntities
+        [Authorize]
         public IActionResult Index()
         {
-            return View(userService.Get("Test"));
+            return RedirectToAction("Profile", new { id=User.Identity.Name });
+        }
+
+        [Authorize]
+        public async Task<IActionResult> Profile(string id)
+        {
+            UserEntity user = await userService.Get(id);
+            return View(user);
+        }
+
+        public async Task<IActionResult> Edit(string id)
+        {
+            UserEntity user = await userService.Get(id);
+            return View("EditProfile", user);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(UserEntity model, string id)
+        {
+            UserEntity user = await userService.Get(id);
+            user.Email = model.Email;
+            user.PhoneNumber = model.PhoneNumber;
+            bool result = await userService.UpdateAsync(user);
+            if(result)
+                return View("EditProfile", user);
+            ModelState.AddModelError("", "Error occurs while editing your profile");
+            return View("EditProfile", user);
         }
 
         /*

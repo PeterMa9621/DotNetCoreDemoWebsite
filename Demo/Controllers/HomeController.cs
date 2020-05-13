@@ -7,8 +7,9 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Demo.Models;
 using Demo.Services;
-using Demo.Models.Repository;
-using Demo.Models.User;
+using Demo.Models.DataModel.Repository;
+using Demo.Models.DataModel.User;
+using Demo.Models.ViewModel;
 
 namespace Demo.Controllers
 {
@@ -25,16 +26,20 @@ namespace Demo.Controllers
 
         public IActionResult Index()
         {
-            this.userRepository.Add(new UserEntity() {
-                UserName = "Test2",
-                Password = "123456",
-                Ip = "127.0.0.1",
-                RegDate = 1588803544649
-                });
             return View();
         }
 
         public IActionResult Privacy()
+        {
+            return View();
+        }
+
+        public IActionResult About()
+        {
+            return View();
+        }
+
+        public IActionResult Download()
         {
             return View();
         }

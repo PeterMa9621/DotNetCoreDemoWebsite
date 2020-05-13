@@ -1,4 +1,4 @@
-﻿@model LoginViewModel
+﻿@model Demo.Models.ViewModel.LoginViewModel
 @{
     ViewData["Title"] = "Login";
 }
@@ -21,7 +21,7 @@
                         <span asp-validation-for="UserName" class="text-danger"></span>
                     </div>
                     <div>
-                        <input type="password" asp-for="Password" id="current-password" name="current-password" class="fadeIn third" placeholder="Password">
+                        <input type="password" asp-for="Password" id="password" name="password" class="fadeIn third" placeholder="Password">
                         <span asp-validation-for="Password" class="text-danger"></span>
                     </div>
                     <div>

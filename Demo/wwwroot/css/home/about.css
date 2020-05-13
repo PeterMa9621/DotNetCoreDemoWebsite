@@ -1,0 +1,21 @@
+﻿h1.about {
+	color: wheat;
+}
+
+p.about {
+	color: navajowhite;
+}
+
+h1.contact {
+	color: black;
+}
+
+p.contact {
+	color: #919191;
+}
+
+div.page-split {
+	background-color: white;
+	height: 20vh;
+	transform: skewY(-5deg) translateY(10vh);
+}

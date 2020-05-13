@@ -2,9 +2,13 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Demo.Models;
+using Demo.Models.DataModel.News;
+using Demo.Models.DataModel.User;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -24,8 +28,29 @@ namespace Demo
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<DbContext>(options => options.UseMySQL(Configuration.GetConnectionString("MySql")));
+            services.AddDbContext<UserContext>(options => options.UseMySQL(Configuration.GetConnectionString("MySql")));
+            services.AddDbContext<NewsContext>(options => options.UseMySQL(Configuration.GetConnectionString("MySql")));
+            services.AddIdentity<UserEntity, IdentityRole>(options => {
+                options.Password.RequireNonAlphanumeric = false;
+                options.Password.RequireUppercase = false;
+                })
+                .AddEntityFrameworkStores<UserContext>()
+                .AddDefaultTokenProviders();
+            services.ConfigureApplicationCookie(config =>
+            {
+                config.Cookie.Name = "MyCookie";
+                config.LoginPath = "/Login";
+            });
             services.AddMvc();
+            /*
+            services.AddAuthentication("CookieAuth")
+                .AddCookie("CookieAuth", config =>
+                {
+                    config.Cookie.Name = "MyCookie";
+                    config.LoginPath = "/Login";
+
+                });
+            */
             services.AddControllersWithViews();
         }
 
@@ -44,9 +69,12 @@ namespace Demo
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
-
+            
             app.UseRouting();
-
+            
+            // Who are you?
+            app.UseAuthentication();
+            // Are you allowed?
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>

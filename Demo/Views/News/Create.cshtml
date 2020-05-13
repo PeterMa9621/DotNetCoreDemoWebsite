@@ -1,0 +1,44 @@
+﻿@model Demo.Models.ViewModel.CreateNewsViewModel
+@{
+    ViewData["Title"] = "Create";
+}
+<link rel="stylesheet" href="~/css/news/edit.css" />
+<div class="container-fluid">
+    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+    <div class="row">
+        <div class="col-sm-1"></div>
+        <div class="col-sm-10">
+            <div class="row">
+                <div class="col-6">
+                    <div class="card card-body mt-5 editor">
+                        <form method="post" asp-action="Create">
+                            <div class="row col">
+                                <label class="text-left">Title</label>
+                                <input class="form-control" name="title" value="@Model.Title" asp-for="Title">
+                            </div>
+                            <div class="row col">
+                                <label class="text-left">Content</label>
+                                <textarea rows="20" name="content" class="form-control editor-content" asp-for="Content">@Model.Content</textarea>
+                            </div>
+                            <div class="row col">
+                                <label class="text-left">Category</label>
+                                <input class="form-control" name="category" value="@Model.Category" asp-for="Category">
+                            </div>
+
+                            <button type="submit" class="btn btn-outline-info">
+                                Create
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="card card-body mt-5 editor text-left">
+                        <markdown-it-vue :content="news.content" />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-1"></div>
+    </div>
+
+</div>
