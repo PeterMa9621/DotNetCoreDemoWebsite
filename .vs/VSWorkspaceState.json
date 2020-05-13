@@ -2,7 +2,6 @@
   "ExpandedNodes": [
     "",
     "\\Demo",
-    "\\Demo\\bin\\Release",
     "\\Demo\\Controllers",
     "\\Demo\\Controllers\\User",
     "\\Demo\\Services",
@@ -11,5 +10,6 @@
     "\\Demo\\wwwroot",
     "\\Demo\\wwwroot\\js"
   ],
+  "SelectedNode": "\\Demo\\Controllers\\User\\LoginController.cs",
   "PreviewInSolutionExplorer": false
 }

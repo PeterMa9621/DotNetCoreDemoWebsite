@@ -18,10 +18,6 @@ namespace Demo.Models.DataModel.User
 
         }
 
-        public UserContext()
-        {
-
-        }
         /*
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

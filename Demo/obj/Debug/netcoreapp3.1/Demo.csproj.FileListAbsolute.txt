@@ -340,12 +340,6 @@ G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Registe
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\Error.cshtml.g.cs
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ValidationScriptsPartial.cshtml.g.cs
-G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserEntities\Create.cshtml.g.cs
-G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserEntities\Delete.cshtml.g.cs
-G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserEntities\Details.cshtml.g.cs
-G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserEntities\Edit.cshtml.g.cs
-G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\UserEntities\Index.cshtml.g.cs
-G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\User\Index.cshtml.g.cs
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\_ViewStart.cshtml.g.cs
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.RazorTargetAssemblyInfo.cache
@@ -355,8 +349,6 @@ G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CopyCom
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\staticwebassets\Demo.StaticWebAssets.Manifest.cache
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\staticwebassets\Demo.StaticWebAssets.xml
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.genruntimeconfig.cache
-G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
-G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.MvcApplicationPartsAssemblyInfo.cache
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
@@ -374,3 +366,28 @@ F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Delete.cshtml.
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Edit.cshtml.g.cs
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Create.cshtml.g.cs
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Download.cshtml.g.cs
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.Internal.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
+G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Home\Download.cshtml.g.cs
+G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Create.cshtml.g.cs
+G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Delete.cshtml.g.cs
+G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Detail.cshtml.g.cs
+G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Edit.cshtml.g.cs
+G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\News\Index.cshtml.g.cs
+G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\User\EditProfile.cshtml.g.cs
+G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Razor\Views\User\Profile.cshtml.g.cs
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.AzureAppServices.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
+G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.MvcApplicationPartsAssemblyInfo.cache

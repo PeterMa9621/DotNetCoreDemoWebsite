@@ -20,7 +20,7 @@ namespace Demo.Models.DataModel.News
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseMySQL("server=localhost;database=demo;user=root;password=mjy159357");
+            optionsBuilder.UseMySQL("server=peterma.mysql.database.azure.com;database=demo;user=majingyuan@peterma;password=Mjy159357!");
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

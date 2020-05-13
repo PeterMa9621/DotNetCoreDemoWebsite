@@ -16,11 +16,9 @@ namespace Demo.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-        private readonly UserRepository userRepository;
 
         public HomeController(ILogger<HomeController> logger)
         {
-            userRepository = new UserRepository();
             _logger = logger;
         }
 

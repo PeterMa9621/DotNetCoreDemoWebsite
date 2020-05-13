@@ -1,0 +1,25 @@
+﻿div.news-list-view {
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    z-index: 1
+}
+
+div.slide-box {
+    border-radius: 0.4rem;
+    box-shadow: 0 30px 60px 0 rgba(0,0,0,0.3);
+    z-index: 1;
+}
+
+div.background-top {
+    position: relative;
+    width: 100%;
+    background-color: #343a40;
+}
+
+div.background-middle {
+    position: absolute;
+    height: 20vh;
+    width: 100%;
+    z-index: 0;
+    background-color: #ffffff;
+    transform: translateY(-10vh);
+}

@@ -26,7 +26,16 @@ namespace Demo.Services
 
         public NewsEntity GetNews(string id)
         {
-            return newsRepository.FindBy(e => e.Id == Int32.Parse(id)).First();
+            try
+            {
+                NewsEntity newsEntity = newsRepository.FindBy(e => e.Id == Int32.Parse(id)).First();
+                if (newsEntity != null)
+                    return newsEntity;
+            } catch(Exception e)
+            {
+                throw e;
+            }
+            return null;
         }
 
         public bool DeleteNews(string id)

@@ -16,12 +16,10 @@ namespace Demo.Services
     {
         private readonly UserManager<UserEntity> _userManager;
         private readonly SignInManager<UserEntity> _signInManger;
-        private readonly UserRepository userRepository;
         public UserService(UserManager<UserEntity> userManager, SignInManager<UserEntity> signInManager)
         {
             _userManager = userManager;
             _signInManger = signInManager;
-            userRepository = new UserRepository();
         }
         public async Task<bool> Add(RegisterViewModel model)
         {
@@ -48,15 +46,11 @@ namespace Demo.Services
                 userRepository.Add(user);
                 userRepository.Save();
                 */
-            } catch(Exception e)
+            } catch(Exception)
             {
                 return false;
             }
             
-        }
-        public IEnumerable<UserEntity> Get()
-        {
-            return userRepository.GetAll().ToArray();
         }
 
         public async Task<UserEntity> Get(string userName)

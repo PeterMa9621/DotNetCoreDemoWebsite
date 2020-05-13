@@ -1,0 +1,26 @@
+﻿h1.page-header, h3.page-header {
+	position: relative;
+	color: wheat;
+	z-index: 1;
+}
+
+div.page-header {
+	position: relative;
+	background-color: #343a40;
+	z-index: 1;
+}
+
+div.polaroid {
+	width: 80%;
+	background-color: white;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	margin-bottom: 25px;
+	z-index: 1;
+}
+
+div.page-split {
+	background-color: #343a40;
+	height: 20vh;
+	transform: skewY(-5deg) translateY(-10vh);
+	z-index: 0;
+}
