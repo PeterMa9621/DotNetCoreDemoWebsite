@@ -354,8 +354,6 @@ F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptograp
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
 F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Stores.dll
-F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
-F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.MvcApplicationPartsAssemblyInfo.cache
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\Home\About.cshtml.g.cs
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\User\EditProfile.cshtml.g.cs
 F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Razor\Views\User\Profile.cshtml.g.cs
@@ -391,3 +389,18 @@ G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extension
 G:\DotNet\DotNetCoreDemoWebsite\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
 G:\DotNet\DotNetCoreDemoWebsite\Demo\obj\Debug\netcoreapp3.1\Demo.MvcApplicationPartsAssemblyInfo.cache
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.EnvironmentVariables.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.FileExtensions.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Json.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Abstractions.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileProviders.Physical.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.FileSystemGlobbing.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.AzureAppServices.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Logging.Configuration.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Options.ConfigurationExtensions.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\nlog.config
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\NLog.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\NLog.Extensions.Logging.dll
+F:\C# Programs\Demo\Demo\bin\Debug\netcoreapp3.1\NLog.Web.AspNetCore.dll
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
+F:\C# Programs\Demo\Demo\obj\Debug\netcoreapp3.1\Demo.MvcApplicationPartsAssemblyInfo.cache

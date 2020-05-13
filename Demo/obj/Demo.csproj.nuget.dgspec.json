@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "G:\\DotNet\\DotNetCoreDemoWebsite\\Demo\\Demo.csproj": {}
+    "F:\\C# Programs\\Demo\\Demo\\Demo.csproj": {}
   },
   "projects": {
-    "G:\\DotNet\\DotNetCoreDemoWebsite\\Demo\\Demo.csproj": {
+    "F:\\C# Programs\\Demo\\Demo\\Demo.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "G:\\DotNet\\DotNetCoreDemoWebsite\\Demo\\Demo.csproj",
+        "projectUniqueName": "F:\\C# Programs\\Demo\\Demo\\Demo.csproj",
         "projectName": "Demo",
-        "projectPath": "G:\\DotNet\\DotNetCoreDemoWebsite\\Demo\\Demo.csproj",
-        "packagesPath": "C:\\Users\\jma4\\.nuget\\packages\\",
-        "outputPath": "G:\\DotNet\\DotNetCoreDemoWebsite\\Demo\\obj\\",
+        "projectPath": "F:\\C# Programs\\Demo\\Demo\\Demo.csproj",
+        "packagesPath": "C:\\Users\\lenovo\\.nuget\\packages\\",
+        "outputPath": "F:\\C# Programs\\Demo\\Demo\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\jma4\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\lenovo\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -80,6 +80,10 @@
             "MySql.Data.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.20, )"
+            },
+            "NLog.Web.AspNetCore": {
+              "target": "Package",
+              "version": "[4.9.2, )"
             }
           },
           "imports": [

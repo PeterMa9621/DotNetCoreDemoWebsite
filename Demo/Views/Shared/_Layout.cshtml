@@ -70,17 +70,19 @@
             </div>
         </nav>
     </header>
-    <div>
-        <main role="main" class="pb-3">
+    <div class="mb-3">
+        <main role="main">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container text-center">
-            &copy; 2020 - Demo Website By <a asp-controller="Home" asp-action="About">Jingyuan Ma</a> - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
+    <div class="mt-5">
+        <footer class="border-top footer text-muted">
+            <div class="container text-center my-auto">
+                &copy; 2020 - Demo Website By <a asp-controller="Home" asp-action="About">Jingyuan Ma</a> - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            </div>
+        </footer>
+    </div>
+    
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <!-- JS, Popper.js, and jQuery -->

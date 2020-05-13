@@ -9,6 +9,8 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Logging.AzureAppServices;
 using Microsoft.Extensions.Options;
+using NLog.Fluent;
+using NLog.Extensions.Logging;
 
 namespace Demo
 {
@@ -21,7 +23,14 @@ namespace Demo
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>
             Host.CreateDefaultBuilder(args)
-                .ConfigureLogging(logging => logging.AddAzureWebAppDiagnostics())
+                .ConfigureLogging((hostingContext, logging) => 
+                {
+                    logging.AddConfiguration(hostingContext.Configuration.GetSection("Logging"));
+                    logging.AddAzureWebAppDiagnostics();
+                    logging.AddConsole();
+                    logging.AddDebug();
+                    logging.AddNLog();
+                })
                 .ConfigureServices(serviceCollection => serviceCollection
                     .Configure<AzureFileLoggerOptions>(options =>
                     {
