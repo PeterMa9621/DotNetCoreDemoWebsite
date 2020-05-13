@@ -2,7 +2,7 @@
 ## Author: Jingyuan Ma
 ### Contact me: jma4@ualberta.ca
 
-# Nuget Package:
+# Nuget Package Dependency:
 * MySql.Data.EntityFrameworkCore v8.0.20
 * Microsoft.Extensions.Logging.AzureAppServices v3.1.4
 * NLog.Web.AspNetCore v4.9.2
